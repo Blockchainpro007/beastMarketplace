@@ -4,7 +4,6 @@ module.exports = function override(config, env) {
     url: require.resolve("url"),
     fs: require.resolve("fs"),
     assert: require.resolve("assert"),
-    crypto: false,
     http: require.resolve("stream-http"),
     https: require.resolve("https-browserify"),
     os: require.resolve("os-browserify/browser"),
