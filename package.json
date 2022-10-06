@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "heroku-postbuild": "cd client && npm install -g yarn && yarn install && yarn build",
+    "heroku-postbuild": "cd client && npm i yarn@1.22.5 && yarn install && yarn build",
     "server": "nodemon index.js",
     "client": "npm start --prefix client",
     "deploy": "cross-env NODE_ENV=production node index.js",
